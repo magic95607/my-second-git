@@ -10,7 +10,7 @@ import org.springframework.stereotype.*;
 import com.example.ch01_RestController.Staff;
 
 @Component
-public class StaffDao implements IDao {
+public class StaffDaoImpl implements IStaffDao {
 	@Autowired
 	private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 

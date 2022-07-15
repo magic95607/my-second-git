@@ -4,12 +4,12 @@ import org.springframework.beans.factory.annotation.*;
 import org.springframework.stereotype.Service;
 
 import com.example.ch01_RestController.Staff;
-import com.example.ch01_RestController.dao.StaffDao;
+import com.example.ch01_RestController.dao.IStaffDao;
 
 @Service
-public class StaffService implements IService {
+public class StaffServiceImpl implements IStaffService {
 	@Autowired
-	private StaffDao dao;
+	private IStaffDao dao;
 
 	public Staff findById(Integer id) {
 		return dao.findById(id);

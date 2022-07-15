@@ -11,7 +11,7 @@ import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.ch01_RestController.service.StaffService;
+import com.example.ch01_RestController.service.IStaffService;
 
 
 @RestController
@@ -21,7 +21,7 @@ public class StaffController {
 	private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
 	@Autowired
-	private StaffService staffService;
+	private IStaffService staffService;
 
 	@PostMapping("/staff")
 	public ResponseEntity<String> create(@RequestBody Staff staff) {
@@ -50,7 +50,7 @@ public class StaffController {
 //			return result.get(0);
 //		} else {
 //			return null;
-//		}
+//		}	
 //
 //	}
 
