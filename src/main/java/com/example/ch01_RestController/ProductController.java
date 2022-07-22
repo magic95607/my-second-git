@@ -4,6 +4,7 @@ package com.example.ch01_RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import com.example.ch01_RestController.entity.ProductEntity;
 import com.example.ch01_RestController.service.IProductService;
 
 @RestController

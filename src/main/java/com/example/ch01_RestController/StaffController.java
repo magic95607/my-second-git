@@ -2,6 +2,7 @@ package com.example.ch01_RestController;
 
 import java.util.*;
 
+import org.hibernate.annotations.common.util.impl.LoggerFactory;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.http.*;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import com.example.ch01_RestController.service.IStaffService;
 
+import org.slf4j.*;
 
 @RestController
 public class StaffController {
